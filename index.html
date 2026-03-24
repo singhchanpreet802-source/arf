@@ -15,7 +15,10 @@
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="Aneja Research Foundation home">
         <span class="brand-mark">ARF</span>
-        <span class="brand-text">Aneja Research Foundation</span>
+        <span class="brand-text">
+          <span class="brand-name">Aneja Research Foundation</span>
+          <span class="brand-subtitle">Civic Systems Research Lab</span>
+        </span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span></span>
@@ -48,16 +51,46 @@
           </div>
         </div>
         <aside class="hero-panel" aria-label="Research focus areas">
-          <div class="panel-card">
-            <p class="panel-label">Focus Areas</p>
-            <ul class="focus-list">
-              <li>Urban mobility</li>
-              <li>Basic infrastructure</li>
-              <li>Public behavior</li>
-              <li>Systems diagnosis</li>
-            </ul>
+          <div class="hero-balance">
+            <span class="hero-divider"></span>
+            <div class="panel-card">
+              <p class="panel-label">Focus Areas</p>
+              <ul class="focus-list">
+                <li>Urban mobility</li>
+                <li>Basic infrastructure</li>
+                <li>Public behavior</li>
+                <li>Systems diagnosis</li>
+              </ul>
+            </div>
           </div>
         </aside>
+      </div>
+    </section>
+
+    <section class="section section-border section-compact" id="what-arf-does">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Core capabilities</p>
+          <h2>What ARF Does</h2>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-item">
+            <h3>Real-world observation</h3>
+            <p>Direct field study reveals how civic systems behave outside formal plans.</p>
+          </article>
+          <article class="capability-item">
+            <h3>Data-driven analysis</h3>
+            <p>Basic evidence and structured notes are used to identify recurring patterns.</p>
+          </article>
+          <article class="capability-item">
+            <h3>Systems thinking</h3>
+            <p>Problems are examined as connected failures rather than isolated incidents.</p>
+          </article>
+          <article class="capability-item">
+            <h3>Actionable solutions</h3>
+            <p>Recommendations are designed to be practical, clear, and implementation-oriented.</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -74,20 +107,20 @@
           <article class="project-card">
             <p class="card-index">01</p>
             <h3>Traffic Congestion at Local Junction</h3>
-            <p>A close study of recurring bottlenecks, lane conflict, and unmanaged turning movement.</p>
-            <a class="button button-secondary" href="projects/traffic-congestion.html">View Case Study</a>
+            <p class="project-problem">A close study of recurring bottlenecks, lane conflict, and unmanaged turning movement.</p>
+            <a class="button button-secondary project-link" href="projects/traffic-congestion.html">View Case Study</a>
           </article>
           <article class="project-card">
             <p class="card-index">02</p>
             <h3>Drainage Failure in Residential Colony</h3>
-            <p>An assessment of standing water, blocked flow paths, and maintenance breakdowns.</p>
-            <a class="button button-secondary" href="projects/drainage-failure.html">View Case Study</a>
+            <p class="project-problem">An assessment of standing water, blocked flow paths, and maintenance breakdowns.</p>
+            <a class="button button-secondary project-link" href="projects/drainage-failure.html">View Case Study</a>
           </article>
           <article class="project-card">
             <p class="card-index">03</p>
             <h3>Public Behavior and Civic Discipline Study</h3>
-            <p>An examination of how everyday public behavior shapes system performance and disorder.</p>
-            <a class="button button-secondary" href="projects/public-behavior.html">View Case Study</a>
+            <p class="project-problem">An examination of how everyday public behavior shapes system performance and disorder.</p>
+            <a class="button button-secondary project-link" href="projects/public-behavior.html">View Case Study</a>
           </article>
         </div>
       </div>
@@ -183,9 +216,16 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Aneja Research Foundation (ARF)</p>
-      <p>
-        This is a student-led independent research initiative. The insights provided are for informational purposes only and do not constitute professional advice.
+      <p class="footer-brand">Aneja Research Foundation (ARF)</p>
+      <p class="footer-tagline">Student-led civic systems research lab</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#projects">Projects</a>
+        <a href="#method">Method</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-disclaimer">
+        This is a student-led independent research initiative. Insights are for informational purposes only.
       </p>
     </div>
   </footer>
